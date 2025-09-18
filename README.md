@@ -30,7 +30,7 @@ This mini-project allows adding, viewing, updating, and deleting student informa
 
 Log in to MySQL:
 
-```bash
+```
 sudo mysql -u root
 CREATE DATABASE studentdb;
 USE studentdb;
@@ -41,18 +41,25 @@ CREATE TABLE students (
     email VARCHAR(100),
     course VARCHAR(50)
 );
+``` 
 
-Create MySQL user for the app
+"Create MySQL user for the app :
+
+```
 
 CREATE USER 'Dilhara3132'@'localhost' IDENTIFIED BY 'Dilhara@3132';
 GRANT ALL PRIVILEGES ON studentdb.* TO 'Dilhara3132'@'localhost';
 FLUSH PRIVILEGES;
+```
 
-Compile the Java program
+Compile the Java program :
+```
 javac -cp .:mysql-connector-j-8.1.0/mysql-connector-j-8.1.0.jar StudentManager.java
-
+```
 Run the program
+```
 java -cp .:mysql-connector-j-8.1.0/mysql-connector-j-8.1.0.jar StudentManager
+```
 
 Usage Example
 === Student Management ===
